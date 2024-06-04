@@ -1,1 +1,1 @@
-# Aulas de JavScript
+# Aulas de JavaScript
