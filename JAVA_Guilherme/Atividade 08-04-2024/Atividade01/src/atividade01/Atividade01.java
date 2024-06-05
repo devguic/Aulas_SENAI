@@ -1,0 +1,29 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package atividade01;
+
+/**
+ *
+ * @author dev_noite
+ */
+public class Atividade01 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+  
+        Cliente guilherme = new Cliente("Guilherme", "guioreidela@gmail.com", 45000);
+        
+        guilherme.exibircliente();
+    
+    
+    
+    
+    
+    }
+    
+}
