@@ -1,6 +1,6 @@
 const ler = require('readline-sync');
 
-let pagar = ler.question("Informe o valor da venda: R$");
+let pagar = ler.questionFloat("Informe o valor da venda: R$");
 
 console.log("Opções de pagamento: ");
 console.log("1. Venda a Vista - desconto de 10%\n2. Venda a Prazo 30 dias - desconto de 5%\n3. Venda a Prazo 60 dias - mesmo preço\n4. Venda a Prazo 90 dias - acréscimo de 5%\n5. Venda com cartão de débito - desconto de 8%");
