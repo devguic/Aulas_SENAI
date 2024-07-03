@@ -11,28 +11,44 @@ const {default: cor} = await import ('chalk');
 
     const DOLAR = 5.50, EURO = 6.05, LIBRA = 7.12, IENE = 0.033;
 
-    function dolar(valor) { return valor / DOLAR;}
-    function euro(valor) { return valor / EURO;}
-    function libra(valor) { return valor / LIBRA;}
-    function iene(valor) { return valor / IENE;}
+    function dolar(valor) {
+        result = valor / DOLAR;
+        return new Intl.NumberFormat('en-US', {
+            style: 'currency', currency: 'USD' }).format(result);
+    }
+    function euro(valor) { 
+        result = valor / EURO;
+        return new Intl.NumberFormat('de-DE', {
+            style: 'currency', currency: 'EUR' }).format(result);
+    }
+    function libra(valor) { 
+        result = valor / LIBRA;
+        return new Intl.NumberFormat('en-GB', {
+            style: 'currency', currency: 'GBP' }).format(result);
+    }
+    function iene(valor) { 
+        result = valor / IENE;
+        return new Intl.NumberFormat('ja-JP', {
+            style: 'currency', currency: 'JPY' }).format(result);
+    }
 
     function converterMoeda(valor, moeda) {
         
         switch (moeda) {
             case 1:
-                console.log(cor.green(`O valor informado convertido para dólar é: $${dolar(valor).toFixed(2)}`));
+                console.log(cor.green(`O valor informado convertido para dólar é: ${dolar(valor)}`));
                 break;
 
             case 2:
-                console.log(cor.red(`O valor informado convertido para euro é: ${euro(valor).toFixed(2)}`));
+                console.log(cor.red(`O valor informado convertido para euro é: ${euro(valor)}`));
                 break;
 
             case 3:
-                console.log(cor.cyanBright(`O valor informado convertido para libra é: ${libra(valor).toFixed(2)}`));
+                console.log(cor.cyanBright(`O valor informado convertido para libra é: ${libra(valor)}`));
                 break;
 
             case 4:
-                console.log(cor.magenta(`O valor informado convertido para iene é: ${iene(valor).toFixed(2)}`));
+                console.log(cor.magenta(`O valor informado convertido para iene é: ${iene(valor)}`));
                 break;
         
             default:
