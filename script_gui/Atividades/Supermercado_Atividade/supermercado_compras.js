@@ -227,6 +227,7 @@ let excluirItem = (nomeProdutoexcluir) => {
     }
 }
 
+let funcaoDeComprar = () => {
 let confirma = ler.questionInt("Realmente deseja comprar?\n1 - SIM   2 - NÃO\n=> ");
 if (confirma === 1) {
     while (x) {
@@ -275,7 +276,9 @@ if (confirma === 1) {
     }
 } else {
     console.log("Compra cancelada");
-}
+}}
 
 
 //Tudo funcional, pensar em uma forma de adicionar os produtos por quantidade
+
+module.exports = {funcaoDeComprar, excluirItem, carrinhoComProduto, carrinho, formaDePagamento, exibirProdutosSetor, adicionarProduto, esperaUsuario, x};
