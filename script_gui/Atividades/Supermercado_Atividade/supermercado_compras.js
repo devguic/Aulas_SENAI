@@ -172,6 +172,9 @@ let carrinhoComProduto = (opt) => {
                 }
                 r = false;
                 break;
+            case 4:
+                    console.table(carrinho);
+                    break;
             default:
                 console.log("Opção inválida.");
                 esperaUsuario();
@@ -269,7 +272,7 @@ if (confirma === 1) {
             if (formaDePagamento != 0) {
                 x = false;
             } else {
-                let opt = ler.questionInt("O que deseja fazer?\n 1- Excluir ítem\n 2- Finalizar Compra\n 3- Continuar Comprando\n=> ");
+                let opt = ler.questionInt("O que deseja fazer?\n 1- Excluir ítem\n 2- Finalizar Compra\n 3- Continuar Comprando\n 4- Exibir o carrinho\n => ");
                 carrinhoComProduto(opt);
             }
         }
