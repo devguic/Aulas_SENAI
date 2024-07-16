@@ -149,13 +149,13 @@ let areaAdministrativa = () => {
 
     while (po) {
         
-        console.log("---------- Àrea administrativa -------------");
-        console.log("---- 1. Adicionar produtos -----------------");
-        console.log("---- 2. Excluir produtos -------------------");
-        console.log("---- 3. procurar produtos ------------------");
-        console.log("---- 4. Atualizar produtos -----------------");
-        console.log("---- 5. Listar todos os produtos -----------");
-        console.log("---- 6. SAIR -------------------------------");
+        console.log("⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝ Àrea administrativa ⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
+        console.log("⚝──⭒─⭑─⭒──⚝ 1. Adicionar produtos ⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
+        console.log("⚝──⭒─⭑─⭒──⚝ 2. Excluir produtos ⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
+        console.log("⚝──⭒─⭑─⭒──⚝ 3. procurar produtos ⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
+        console.log("⚝──⭒─⭑─⭒──⚝ 4. Atualizar produtos ⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
+        console.log("⚝──⭒─⭑─⭒──⚝ 5. Listar todos os produtos ⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
+        console.log("⚝──⭒─⭑─⭒──⚝ 6. SAIR ⚝──⭒─⭑─⭒──⚝⚝──⭒─⭑─⭒──⚝ ⚝──⭒─⭑─⭒──⚝");
         let admopt = ler.questionInt("=> ");
 
         switch (admopt) {
